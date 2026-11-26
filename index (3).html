@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GU Track</title><link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script></head>
+<body><div id="login" class="login"><div class="card"><h1>GU Track</h1><p id="tag"></p>
+<label>Email<input id="lu" value="pasien@demo.id"></label><label>Password<input id="lp" type="password" value="demo123"></label>
+<button class="btn" onclick="login()">Masuk / Login</button>
+<p class="muted">Demo: pasien@demo.id atau admin@demo.id · demo123</p><p id="lerr" class="err"></p></div></div>
+<div id="app" hidden><header><b class="logo">GU Track</b><span class="sp"></span>
+<button class="ghost" onclick="setLang()" id="lg">ID</button><button class="ghost" onclick="go('followup')" title="Notifikasi">🔔<i id="nc"></i></button>
+<button class="ghost" onclick="logout()" id="pf">👤</button></header>
+<div class="wrap"><nav id="nav"></nav><main id="main"></main></div></div>
+<div id="modal" class="modal" hidden><div class="card"><div id="mbody"></div><button class="btn" onclick="$('modal').hidden=true">OK</button></div></div>
+<script src="js/data.js"></script><script src="js/app.js"></script></body></html>
